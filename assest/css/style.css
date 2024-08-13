@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: #1167b1;
+    transition: all .3s ease-in-out;
+}
+
+.container {
+    position: relative;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-gap: 100px 20px;
+    padding: 30px 20px;
+    margin-top: 3%;
+
+}
+
+.container .card {
+    position: relative;
+    min-height: 480px;
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 1.2);
+    transition: 0.3s ease-in-out;
+    margin-top: 15%;
+    text-align: center;
+    padding: 20px 20px;
+    cursor: pointer;
+
+}
+
+.container .card .imgBx {
+    position: absolute;
+    width: 100%;
+    top: -60px;
+    border-radius: 10px;
+}
+
+.content {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #1167b1;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.container .card .imgBx img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}
+
+p {
+    font-size: 14px;
+}
+
+
+@media (max-width: 1200px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-gap: 50px 20px;
+        padding: 30px 20px;
+    }
+
+    .imgBx img {
+        width: 80%
+    }
+}
+
+@media (max-width: 780px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px 20px;
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px 20px;
+        padding: 30px 20px;
+    }
+
+    .imgBx img {
+        width: 80%
+    }
+
+    .card {
+        width: 100%;
+        height: 500px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
