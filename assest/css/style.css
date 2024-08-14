@@ -22,13 +22,13 @@ body {
     grid-template-columns: repeat(3, 3fr);
     grid-gap: 100px 20px;
     padding: 30px 20px;
-    margin-top: 3%;
+    margin-top: 1%;
 
 }
 
 .container .card {
     position: relative;
-    min-height: 480px;
+    min-height: 500px;
     background: #fff;
     border: none;
     border-radius: 10px;
@@ -55,7 +55,7 @@ body {
 
 .content {
     position: absolute;
-    top: 45%;
+    top: 40%;
     width: 100%;
     padding: 0 20px;
 }
@@ -63,7 +63,7 @@ body {
 h2 {
     color: #1167b1;
     font-weight: 800;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .container .card .imgBx img {
@@ -133,4 +133,31 @@ p {
     h2 {
         font-size: 20px;
     }
+}
+
+button {
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    padding: 10px 0;
+    background: #1167b1;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+button:hover {
+    background: transparent;
+    color: #1167b1;
+    transition: .3s ease-in-out;
+    border: 1px solid #1167b1;
 }
